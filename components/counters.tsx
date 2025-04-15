@@ -6,9 +6,7 @@ import styles from './counters.module.css'
 function MyButton() {
   const [count, setCount] = useState(0)
 
-  function handleClick() {
-    setCount(count + 1)
-  }
+  const handleClick = () => setCount(count + 1)
 
   return (
     <div>
